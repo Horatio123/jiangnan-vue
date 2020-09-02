@@ -13,10 +13,14 @@
     <el-form-item label="描述" prop="descript">
       <el-input v-model="dataForm.descript" placeholder=""></el-input>
     </el-form-item>
-    <el-form-item label="[是否显示0-1]" prop="showStatus">
-      <el-input v-model="dataForm.showStatus" placeholder="[0-1-]"></el-input>
+    <el-form-item label="是否显示" prop="showStatus">
+      <el-switch
+        v-model="dataForm.showStatus"
+        active-color="#13ce66"
+        inactive-color="#ff4949">
+      </el-switch>
     </el-form-item>
-    <el-form-item label="" prop="firstLetter">
+    <el-form-item label="首字母" prop="firstLetter">
       <el-input v-model="dataForm.firstLetter" placeholder=""></el-input>
     </el-form-item>
     <el-form-item label="排序" prop="sort">
